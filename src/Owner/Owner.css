@@ -1,0 +1,65 @@
+.owner-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    display: block;
+    margin: 2rem auto;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 10% 10% 100% 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.paragraph-1 {
+    text-align: left;
+}
+
+.bio-video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 2rem auto;
+}
+
+@media screen and (min-width: 1100px) {
+    .bio-video {
+        width: calc(16px * 50);
+        height: calc(9px * 50);
+    }
+}
+
+.paragraph-2 {
+    text-align: right;
+    font-size: 1.25rem;
+}

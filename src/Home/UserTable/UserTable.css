@@ -1,0 +1,20 @@
+.user-table {
+    width: 75%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .user-table th {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #dfe2e5;
+    padding: 0.8rem 1rem;
+  }
+  
+  .user-table td {
+    border-bottom: 1px solid #dfe2e5;
+    padding: 0.8rem 1rem;
+    text-align: center;
+  }
