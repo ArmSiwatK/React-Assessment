@@ -29,7 +29,7 @@ This is a React-based project that demonstrates the use of components, state man
 5. In the Admin Home section, you can delete a user by clicking on the “Delete” button next to their name in the table.
 
 ### **Contributing**
-This project is an assessment for a Generation Thailand learner in React, and so not currently open for contributions.
+* This project is an assessment for a Generation Thailand learner in React, and so not currently open for contributions.
 
 ### **Authors**
 * 45_Siwat (Arm/อาร์ม)
