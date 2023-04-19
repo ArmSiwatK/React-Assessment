@@ -1,9 +1,13 @@
+import React, { useEffect } from 'react';
 import NavBar from "../NavBar/NavBar";
 import ProfilePic from "../res/profile.png";
 import Bio from "./Bio";
 import "./Owner.css";
 
 const Owner = () => {
+  useEffect(() => {
+    document.title = 'React – Assessment (Owner)';
+  }, []);
 
   return (
     <div>

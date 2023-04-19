@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from "../NavBar/NavBar";
 import Header from './Header/Header';
 import Button from './Button/Button';
 import AdminTable from './AdminTable/AdminTable';
 import UserTable from './UserTable/UserTable';
 import FormSection from './FormSection/FormSection';
-import mockEmployees from '../MockEmployees';
+import mockEmployees from './mockEmployees';
 import "./Home.css";
 
 const Home = () => {
   const [state, setState] = useState('Normal');
   const [users, setUsers] = useState(mockEmployees);
+
+  useEffect(() => {
+    document.title = state === 'Normal' ? 'React – Assessment' : `Home – ${state} Home Section`;
+  }, [state]);
 
   const handleButtonClick = (section) => {
     setState(section);
@@ -35,6 +39,8 @@ const Home = () => {
     const newUser = { id: newId, ...user };
     setUsers((prevUsers) => [...prevUsers, newUser]);
   };
+
+
 
   return (
     <div>
