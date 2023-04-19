@@ -25,11 +25,11 @@ This is a React-based project that demonstrates the use of components, state man
 1. Run the project using **‘npm run dev’**.
 2. Open your web browser and navigate to **‘ht<span>tp://localhost:5173/’**.
 3. Click on the “User Home Section” or “Admin Home Section” button to switch between the two sections.
-4. In the Admin Home section, you can create a new user by filling out the form and clicking on the "Create User" button.
-5. In the Admin Home section, you can delete a user by clicking on the "Delete" button next to their name in the table.
+4. In the Admin Home section, you can create a new user by filling out the form and clicking on the “Create User” button.
+5. In the Admin Home section, you can delete a user by clicking on the “Delete” button next to their name in the table.
 
 ### **Contributing**
-This project is an assessment for a Generation Thailand learner in ReactJS, and so not currently open for contributions.
+This project is an assessment for a Generation Thailand learner in React, and so not currently open for contributions.
 
 ### **Authors**
 * 45_Siwat (Arm/อาร์ม)
