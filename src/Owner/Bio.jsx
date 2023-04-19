@@ -7,7 +7,6 @@ const Bio = () => {
             <YouTube
                 className="bio-video"
                 videoId="vGrtIMxlizY"
-                opts={{ height: '390', width: '640', playerVars: { autoplay: 1 } }}
             />
             <p className="paragraph-2">45_Siwat (Arm/อาร์ม)</p>
         </div>
