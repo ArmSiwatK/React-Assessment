@@ -1,27 +1,25 @@
 import React from 'react';
 import "./UserTable.css";
 
-const UserTable = ({ data }) => {
-  return (
-    <table className="user-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Surname</th>
-          <th>Position</th>
+const UserTable = ({ data }) => (
+  <table className="user-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      {data.map(({ id, name, lastname, position }) => (
+        <tr key={id}>
+          <td>{name}</td>
+          <td>{lastname}</td>
+          <td>{position}</td>
         </tr>
-      </thead>
-      <tbody>
-        {data.map((user) => (
-          <tr key={user.id}>
-            <td>{user.name}</td>
-            <td>{user.lastname}</td>
-            <td>{user.position}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
+      ))}
+    </tbody>
+  </table>
+);
 
 export default UserTable;

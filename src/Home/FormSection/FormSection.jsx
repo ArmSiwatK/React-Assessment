@@ -2,16 +2,21 @@ import React, { useState } from 'react';
 import "./FormSection.css";
 
 const FormSection = ({ onSubmit }) => {
-    const [name, setName] = useState('');
-    const [lastname, setLastname] = useState('');
-    const [position, setPosition] = useState('');
+    const [formValues, setFormValues] = useState({
+        name: '',
+        lastname: '',
+        position: ''
+    });
 
-    const handleSubmit = (event) => {
+    const handleChange = event => {
+        const { name, value } = event.target;
+        setFormValues(prevState => ({ ...prevState, [name]: value }));
+    };
+
+    const handleSubmit = event => {
         event.preventDefault();
-        onSubmit({ name, lastname, position });
-        setName('');
-        setLastname('');
-        setPosition('');
+        onSubmit(formValues);
+        setFormValues({ name: '', lastname: '', position: '' });
     };
 
     return (
@@ -22,23 +27,26 @@ const FormSection = ({ onSubmit }) => {
                     <input
                         type="text"
                         id="name"
-                        value={name}
+                        name="name"
+                        value={formValues.name}
                         placeholder="Name"
-                        onChange={(event) => setName(event.target.value)}
+                        onChange={handleChange}
                     />
                     <input
                         type="text"
                         id="lastname"
-                        value={lastname}
+                        name="lastname"
+                        value={formValues.lastname}
                         placeholder="Surname"
-                        onChange={(event) => setLastname(event.target.value)}
+                        onChange={handleChange}
                     />
                     <input
                         type="text"
                         id="position"
-                        value={position}
+                        name="position"
+                        value={formValues.position}
                         placeholder="Position"
-                        onChange={(event) => setPosition(event.target.value)}
+                        onChange={handleChange}
                     />
                     <button type="submit">Save</button>
                 </form>
